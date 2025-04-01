@@ -1,0 +1,17 @@
+name: StopServerNotice
+version: '1.0'
+main: ljsure.cn.StopServerNotice
+api-version: '1.21'
+
+commands:
+  sstop:
+    description: 安全关闭服务器（可添加原因）
+    usage: /sstop [秒数|cancel] [原因]
+    permission: sstop.use
+    permission-message: "§c你没有权限使用此命令！"
+    aliases: [safestop]
+
+permissions:
+  sstop.use:
+    description: 允许使用安全停止命令
+    default: op
